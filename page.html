@@ -10,7 +10,7 @@
     background:#f8f3e6; color:#141310;
     font-family: Arial, Helvetica, sans-serif;
     padding:11px 12px 9px 12px;
-    display:flex; flex-direction:column; gap:6px;
+    display:flex; flex-direction:column; gap:5px;
     overflow:hidden;
   }
   .serif { font-family: Georgia, 'Times New Roman', serif; }
@@ -23,10 +23,10 @@
 
   /* ---------- stat strip ---------- */
   .stats { display:flex; border-top:1px solid #141310; border-bottom:1px solid #141310; }
-  .stat { flex:1; text-align:center; padding:4px 3px 3px 3px; border-right:1px solid #c9bd9d; }
+  .stat { flex:1; text-align:center; padding:5px 3px 4px 3px; border-right:1px solid #c9bd9d; }
   .stat:last-child { border-right:none; }
-  .stat b { display:block; font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:1.05; }
-  .stat span { display:block; font-size:9.5px; line-height:1.15; color:#3c382e; margin-top:1px; }
+  .stat b { display:block; font-family:Georgia,'Times New Roman',serif; font-size:26px; line-height:1.05; }
+  .stat span { display:block; font-size:10px; line-height:1.15; color:#3c382e; margin-top:2px; }
   .stat.hot b { color:#8c2f12; }
 
   /* ---------- lead cards ---------- */
@@ -35,8 +35,8 @@
   .lead svg { display:block; width:100%; height:98px; }
   .lead .body { padding:5px 9px 0 9px; }
   .tag { font-size:10px; font-weight:bold; letter-spacing:1.1px; }
-  .tag .n { display:inline-block; color:#fff; border-radius:50%; width:15px; height:15px; line-height:15px; text-align:center; font-size:9.5px; margin-right:4px; letter-spacing:0; }
-  .lead h2 { font-family:Georgia,'Times New Roman',serif; font-size:17.5px; line-height:1.14; margin:2px 0 3px 0; }
+  .tag .n { display:inline-block; color:#fff; border-radius:50%; width:15px; height:15px; line-height:15px; text-align:center; font-size:10px; margin-right:4px; letter-spacing:0; }
+  .lead h2 { font-family:Georgia,'Times New Roman',serif; font-size:19px; line-height:1.13; margin:2px 0 3px 0; }
   .lead p { font-size:10.5px; line-height:1.28; color:#2c2a24; }
   .c-eu { background:#2b5ea7; } .c-me { background:#b3541e; } .c-as { background:#6d4fa1; }
   .c-af { background:#1e7d4f; } .c-am { background:#0e7c86; } .c-gl { background:#5a5648; } .c-sp { background:#33302a; }
@@ -48,8 +48,8 @@
   .card { border:1px solid #8f866c; background:#fdfaf1; overflow:hidden; height:108px; }
   .card svg { display:block; width:100%; height:24px; }
   .card .body { padding:3px 7px 0 7px; }
-  .card .tag { font-size:9.5px; }
-  .card .tag .n { width:14px; height:14px; line-height:14px; font-size:9px; }
+  .card .tag { font-size:10px; }
+  .card .tag .n { width:14px; height:14px; line-height:14px; font-size:9.5px; }
   .card h3 { font-family:Georgia,'Times New Roman',serif; font-size:13.5px; line-height:1.12; margin:1px 0 2px 0; }
   .card p { font-size:10px; line-height:1.18; color:#2c2a24; }
 
@@ -58,7 +58,7 @@
   .mapbox { width:338px; flex:none; }
   .alsobox { flex:1; }
   .btitle { font-size:11px; font-weight:bold; letter-spacing:1.6px; border-bottom:1.5px solid #141310; padding-bottom:2px; margin-bottom:4px; }
-  .legend { display:flex; flex-wrap:wrap; gap:3px 9px; font-size:9.5px; color:#3c382e; margin-top:2px; }
+  .legend { display:flex; flex-wrap:wrap; gap:3px 9px; font-size:10px; color:#3c382e; margin-top:2px; }
   .legend i { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:3px; }
   .legend span { white-space:nowrap; }
   .also { list-style:none; columns:2; column-gap:16px; font-size:10px; line-height:1.33; }
@@ -66,7 +66,7 @@
   .also b { display:inline-block; min-width:19px; color:#8c2f12; }
 
   /* ---------- footer ---------- */
-  .footer { border-top:1.5px solid #141310; padding-top:3px; font-size:9.5px; line-height:1.3; color:#3c382e; display:flex; flex-direction:column; gap:0; }
+  .footer { border-top:1.5px solid #141310; padding-top:3px; font-size:10px; line-height:1.3; color:#3c382e; display:flex; flex-direction:column; gap:0; }
   .footer .dc { font-weight:bold; color:#8c2f12; }
 </style>
 </head>
@@ -93,24 +93,23 @@
 
     <article class="lead">
       <svg viewBox="0 0 328 92" preserveAspectRatio="none" aria-label="Gulf illustration">
-        <rect x="0" y="0" width="328" height="80" fill="#a8c8dd"/>
-        <path d="M0,0 L328,0 L328,22 L250,30 L190,18 L110,28 L0,34 Z" fill="#e8dcbc"/>
-        <path d="M0,80 L0,58 L58,60 L96,80 Z" fill="#e8dcbc"/>
-        <path d="M252,80 L282,56 L328,62 L328,80 Z" fill="#e8dcbc"/>
-        <text x="238" y="14" font-size="10" font-weight="bold" fill="#6d5c33">IRAN</text>
-        <text x="10" y="72" font-size="8.5" font-weight="bold" fill="#6d5c33">ARABIA</text>
-        <text x="120" y="52" font-size="8.5" font-weight="bold" fill="#33566e">THE GULF</text>
-        <text x="284" y="50" font-size="8.5" font-weight="bold" fill="#33566e">HORMUZ</text>
-        <path d="M96,40 L150,34" stroke="#b3541e" stroke-width="1.6" stroke-dasharray="4 3"/>
-        <path d="M52,32 l11,11 M63,32 l-11,11" stroke="#a31f1f" stroke-width="2.6"/>
-        <rect x="30" y="18" width="92" height="11" fill="#a31f1f"/>
-        <text x="76" y="26.5" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">DRONES INTERCEPTED</text>
-        <text x="44" y="56" font-size="7.5" font-weight="bold" fill="#6d5c33">KUWAIT &middot; BAHRAIN</text>
-        <polygon points="226,40 230,48 238,48 232,53 234,61 226,56 218,61 220,53 214,48 222,48" fill="#e0a32e" stroke="#a31f1f" stroke-width="1"/>
-        <rect x="192" y="64" width="70" height="11" fill="#22303c"/>
-        <text x="227" y="72.5" font-size="7.5" font-weight="bold" fill="#fff" text-anchor="middle">QESHM STRUCK</text>
-        <path d="M292,58 l14,0 l-3,6 l-8,0 Z" fill="#4a4a44"/>
-        <rect x="298" y="52" width="2.4" height="6" fill="#4a4a44"/>
+        <rect x="0" y="0" width="328" height="80" fill="#8fb8d4"/>
+        <path d="M0,0 L328,0 L328,20 L252,29 L182,17 L102,27 L0,32 Z" fill="#e6d7b4"/>
+        <path d="M0,80 L0,60 L58,63 L96,80 Z" fill="#e6d7b4"/>
+        <path d="M250,80 L282,58 L328,63 L328,80 Z" fill="#e6d7b4"/>
+        <text x="246" y="14" font-size="10" font-weight="bold" fill="#6d5c33">IRAN</text>
+        <text x="9" y="73" font-size="10" font-weight="bold" fill="#6d5c33">ARABIA</text>
+        <text x="126" y="74" font-size="10" font-weight="bold" fill="#33566e">THE GULF</text>
+        <text x="322" y="50" font-size="10" font-weight="bold" fill="#33566e" text-anchor="end">HORMUZ</text>
+        <path d="M142,43 L180,44" stroke="#a31f1f" stroke-width="2.4" stroke-dasharray="5 4"/>
+        <g fill="#22303c">
+          <polygon points="58,42 122,37 140,42 122,47"/>
+          <polygon points="88,41 110,27 120,27 102,41"/>
+          <polygon points="88,43 110,57 120,57 102,43"/>
+          <polygon points="58,42 48,35 52,42 48,49"/>
+        </g>
+        <polygon points="226,44 213,47 220,59 208,52 205,65 202,52 190,59 197,47 184,44 197,41 190,29 202,36 205,23 208,36 220,29 213,41" fill="#e07b24" stroke="#a31f1f" stroke-width="1.5"/>
+        <circle cx="205" cy="44" r="5" fill="#a31f1f"/>
         <rect x="0" y="80" width="328" height="12" fill="#22303c"/>
         <text x="164" y="89" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">THE GULF &middot; BAHRAIN &middot; QESHM &middot; HORMUZ</text>
       </svg>
@@ -125,23 +124,23 @@
       <svg viewBox="0 0 328 92" preserveAspectRatio="none" aria-label="Crimea Bridge illustration">
         <rect x="0" y="0" width="328" height="60" fill="#dcebf5"/>
         <rect x="0" y="60" width="328" height="20" fill="#7fb0cf"/>
-        <polygon points="286,14 304,20 286,22" fill="#3c4a56"/>
-        <polygon points="252,8 270,14 252,16" fill="#3c4a56"/>
-        <rect x="8" y="36" width="118" height="5" fill="#4a4a44"/>
-        <rect x="126" y="38" width="46" height="5" fill="#4a4a44" transform="rotate(26 126 38)"/>
-        <path d="M196,36 L204,20 L212,36" fill="none" stroke="#4a4a44" stroke-width="3"/>
-        <rect x="212" y="36" width="108" height="5" fill="#4a4a44"/>
-        <rect x="28" y="41" width="6" height="21" fill="#6b6b62"/>
-        <rect x="88" y="41" width="6" height="21" fill="#6b6b62"/>
-        <rect x="238" y="41" width="6" height="21" fill="#6b6b62"/>
-        <rect x="296" y="41" width="6" height="21" fill="#6b6b62"/>
-        <circle cx="150" cy="18" r="8" fill="#8d8d84" opacity=".85"/>
-        <circle cx="162" cy="10" r="11" fill="#9a9a90" opacity=".8"/>
-        <circle cx="175" cy="17" r="7" fill="#8d8d84" opacity=".85"/>
-        <polygon points="140,33 148,23 152,33" fill="#e08a2e"/>
-        <path d="M138,58 q6,-5 12,0 M158,64 q6,-5 12,0 M196,58 q6,-5 12,0" stroke="#5b87a3" stroke-width="1.6" fill="none"/>
-        <text x="12" y="56" font-size="9" font-weight="bold" fill="#33566e">CRIMEA</text>
-        <text x="272" y="56" font-size="9" font-weight="bold" fill="#33566e">RUSSIA</text>
+        <polygon points="278,10 308,17 278,20" fill="#3c4a56"/>
+        <rect x="0" y="33" width="122" height="7" fill="#4a4a44"/>
+        <rect x="122" y="36" width="54" height="7" fill="#4a4a44" transform="rotate(28 122 36)"/>
+        <rect x="200" y="33" width="128" height="7" fill="#4a4a44"/>
+        <path d="M206,33 L220,13 L234,33" fill="none" stroke="#4a4a44" stroke-width="4"/>
+        <rect x="26" y="40" width="8" height="22" fill="#6b6b62"/>
+        <rect x="86" y="40" width="8" height="22" fill="#6b6b62"/>
+        <rect x="240" y="40" width="8" height="22" fill="#6b6b62"/>
+        <rect x="298" y="40" width="8" height="22" fill="#6b6b62"/>
+        <circle cx="140" cy="16" r="9" fill="#8d8d84" opacity=".85"/>
+        <circle cx="154" cy="11" r="11" fill="#9a9a90" opacity=".8"/>
+        <circle cx="168" cy="15" r="8" fill="#8d8d84" opacity=".85"/>
+        <polygon points="128,34 138,18 144,34" fill="#e08a2e"/>
+        <polygon points="133,34 138,24 143,34" fill="#c02727"/>
+        <path d="M118,70 q7,-6 14,0 M150,66 q7,-6 14,0 M178,70 q7,-6 14,0" stroke="#ffffff" stroke-width="1.8" fill="none" opacity=".7"/>
+        <text x="44" y="55" font-size="10" font-weight="bold" fill="#33566e">CRIMEA</text>
+        <text x="294" y="55" font-size="10" font-weight="bold" fill="#33566e" text-anchor="end">RUSSIA</text>
         <rect x="0" y="80" width="328" height="12" fill="#22303c"/>
         <text x="164" y="89" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">KERCH STRAIT &middot; ROAD ARCH DOWN &middot; RAIL ARCH STANDS</text>
       </svg>
@@ -158,28 +157,31 @@
         <rect x="0" y="0" width="328" height="17" fill="#4b3a75"/>
         <text x="164" y="12" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1.2">SHENZHEN &middot; APEC OPENS &middot; SUMMIT EVE</text>
         <g>
-          <rect x="30" y="27" width="54" height="30" fill="#de2910" stroke="#999"/>
-          <circle cx="41" cy="36" r="3" fill="#ffde00"/>
-          <circle cx="48" cy="32" r="1.4" fill="#ffde00"/><circle cx="50" cy="37" r="1.4" fill="#ffde00"/><circle cx="48" cy="42" r="1.4" fill="#ffde00"/><circle cx="44" cy="45" r="1.4" fill="#ffde00"/>
-          <text x="57" y="69" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#333">CHINA</text>
+          <rect x="28" y="24" width="60" height="34" fill="#de2910" stroke="#999"/>
+          <circle cx="40" cy="33" r="3.4" fill="#ffde00"/>
+          <circle cx="49" cy="29" r="1.5" fill="#ffde00"/><circle cx="52" cy="34" r="1.5" fill="#ffde00"/><circle cx="49" cy="39" r="1.5" fill="#ffde00"/><circle cx="45" cy="42" r="1.5" fill="#ffde00"/>
+          <text x="58" y="72" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#333">CHINA</text>
         </g>
         <g>
-          <rect x="104" y="27" width="54" height="30" fill="#fff" stroke="#999"/>
-          <rect x="104" y="27" width="54" height="4.3" fill="#b22234"/><rect x="104" y="35.6" width="54" height="4.3" fill="#b22234"/><rect x="104" y="44.2" width="54" height="4.3" fill="#b22234"/><rect x="104" y="52.8" width="54" height="4.2" fill="#b22234"/>
-          <rect x="104" y="27" width="25" height="16" fill="#3c3b6e"/>
-          <circle cx="110" cy="31" r="1.3" fill="#fff"/><circle cx="116" cy="31" r="1.3" fill="#fff"/><circle cx="122" cy="31" r="1.3" fill="#fff"/><circle cx="113" cy="36" r="1.3" fill="#fff"/><circle cx="119" cy="36" r="1.3" fill="#fff"/>
-          <text x="131" y="69" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#333">US</text>
+          <rect x="102" y="24" width="60" height="34" fill="#fff" stroke="#999"/>
+          <rect x="102" y="24" width="60" height="4.9" fill="#b22234"/><rect x="102" y="33.7" width="60" height="4.9" fill="#b22234"/><rect x="102" y="43.4" width="60" height="4.9" fill="#b22234"/><rect x="102" y="53.1" width="60" height="4.9" fill="#b22234"/>
+          <rect x="102" y="24" width="28" height="19.4" fill="#3c3b6e"/>
+          <circle cx="108" cy="29" r="1.4" fill="#fff"/><circle cx="115" cy="29" r="1.4" fill="#fff"/><circle cx="122" cy="29" r="1.4" fill="#fff"/><circle cx="111.5" cy="35" r="1.4" fill="#fff"/><circle cx="118.5" cy="35" r="1.4" fill="#fff"/><circle cx="108" cy="41" r="1.4" fill="#fff"/><circle cx="115" cy="41" r="1.4" fill="#fff"/><circle cx="122" cy="41" r="1.4" fill="#fff"/>
+          <text x="132" y="72" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#333">US</text>
         </g>
         <g>
-          <rect x="178" y="27" width="54" height="30" fill="#fff" stroke="#999"/>
-          <rect x="178" y="37" width="54" height="10" fill="#0039a6"/>
-          <rect x="178" y="47" width="54" height="10" fill="#d52b1e"/>
-          <text x="205" y="69" font-size="8.5" font-weight="bold" text-anchor="middle" fill="#333">RUSSIA</text>
+          <rect x="176" y="24" width="60" height="34" fill="#fff" stroke="#999"/>
+          <rect x="176" y="35.3" width="60" height="11.3" fill="#0039a6"/>
+          <rect x="176" y="46.6" width="60" height="11.4" fill="#d52b1e"/>
+          <text x="206" y="72" font-size="9.5" font-weight="bold" text-anchor="middle" fill="#333">RUSSIA</text>
         </g>
         <g fill="#7a5a36">
-          <rect x="252" y="40" width="10" height="30"/><rect x="268" y="32" width="12" height="38"/><rect x="286" y="44" width="9" height="26"/><rect x="300" y="36" width="11" height="34"/>
+          <rect x="250" y="42" width="11" height="32"/><rect x="267" y="34" width="13" height="40"/><rect x="285" y="46" width="10" height="28"/><rect x="300" y="38" width="12" height="36"/>
         </g>
-        <rect x="14" y="72" width="300" height="5" fill="#7a5a36"/>
+        <g fill="#efe9d8">
+          <rect x="270" y="40" width="3" height="3"/><rect x="275" y="49" width="3" height="3"/><rect x="270" y="58" width="3" height="3"/><rect x="254" y="50" width="3" height="3"/><rect x="303" y="46" width="3" height="3"/><rect x="307" y="56" width="3" height="3"/><rect x="288" y="53" width="3" height="3"/>
+        </g>
+        <rect x="12" y="74" width="304" height="5" fill="#7a5a36"/>
         <rect x="0" y="80" width="328" height="12" fill="#22303c"/>
         <text x="164" y="89" font-size="8.5" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">FIRST TRUMP&ndash;XI&ndash;PUTIN TRILATERAL SET FOR THURSDAY</text>
       </svg>
@@ -258,7 +260,7 @@
     </article>
 
     <article class="card">
-      <svg viewBox="0 0 244 24" preserveAspectRatio="none"><rect width="244" height="24" fill="#f0e8e2"/><text x="12" y="17" font-size="13" font-weight="bold" fill="#2b5ea7">&pound;</text><rect x="30" y="14" width="7" height="6" fill="#2b5ea7"/><rect x="41" y="10" width="7" height="10" fill="#2b5ea7"/><rect x="52" y="6" width="7" height="14" fill="#c02727"/><text x="72" y="16" font-size="9.5" font-weight="bold" fill="#274b73">3.6% &middot; HIGHEST IN A YEAR</text></svg>
+      <svg viewBox="0 0 244 24" preserveAspectRatio="none"><rect width="244" height="24" fill="#f0e8e2"/><text x="12" y="17" font-size="13" font-weight="bold" fill="#2b5ea7">&pound;</text><rect x="30" y="14" width="7" height="6" fill="#2b5ea7"/><rect x="41" y="10" width="7" height="10" fill="#2b5ea7"/><rect x="52" y="6" width="7" height="14" fill="#c02727"/><text x="72" y="16" font-size="10" font-weight="bold" fill="#274b73">3.6% &middot; HIGHEST IN A YEAR</text></svg>
       <div class="body">
         <div class="tag t-eu"><span class="n c-eu">11</span>EUROPE &middot; ECONOMY</div>
         <h3>UK inflation rises to 3.6%, highest in a year</h3>
@@ -325,7 +327,7 @@
           <g><circle cx="196" cy="95" r="6" fill="#1e7d4f" stroke="#fff" stroke-width="1"/><text x="196" y="97.5">12</text></g>
           <g><circle cx="244" cy="91" r="6" fill="#6d4fa1" stroke="#fff" stroke-width="1"/><text x="244" y="93.5">7</text></g>
           <g><circle cx="276" cy="81" r="6" fill="#6d4fa1" stroke="#fff" stroke-width="1"/><text x="276" y="83.5">3</text></g>
-          <g><circle cx="327" cy="170" r="6" fill="#8a7d1e" stroke="#fff" stroke-width="1"/><text x="327" y="172.5">13</text></g>
+          <g><circle cx="316" cy="165" r="6" fill="#8a7d1e" stroke="#fff" stroke-width="1"/><text x="316" y="167.5">13</text></g>
         </g>
       </svg>
       <div class="legend">
